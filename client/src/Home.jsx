@@ -3,7 +3,6 @@ import { Hero } from "./components/Hero";
 import { TicketModal } from "./components/TicketModal";
 import { Intensiv } from "./components/Intensiv";
 import { Spikeri } from "./components/Spikeri";
-import Footer from "./components/Footer.jsx";
 import { RunningString } from "./components/RunningString";
 import Programma from "./components/Programma";
 import { Tarif } from "./components/Tarif";
