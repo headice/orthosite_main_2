@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Яндекс.Метрика должна быть загружена как можно раньше -->
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+      m[i] = m[i] || function() {
+        (m[i].a = m[i].a || []).push(arguments);
+      };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) { return; }
+      }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=105921891', 'ym');
+
+    ym(105921891, 'init', {ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true});
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/105921891" style="position:absolute; left:-9999px;" alt="" />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Введение в ортопедию" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png?v=2" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json?v=2" />
+  
+  <!-- VK Pixel -->
+  <script type="text/javascript">
+    (function() {
+      function sendVkHit() {
+        if (window.VK && VK.Retargeting) {
+          VK.Retargeting.Hit();
+          return true;
+        }
+        return false;
+      }
+
+      function initVkPixel() {
+        if (window.VK && VK.Retargeting) {
+          VK.Retargeting.Init("3728550");
+          sendVkHit();
+          return;
+        }
+        setTimeout(initVkPixel, 50);
+      }
+
+      var t = document.createElement("script");
+      t.type = "text/javascript";
+      t.async = true;
+      t.src = "https://vk.com/js/api/openapi.js?169";
+      t.onload = initVkPixel;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(t, s);
+
+      // SPA route tracking for VK pixel
+      (function() {
+        var pushState = history.pushState;
+        history.pushState = function() {
+          pushState.apply(history, arguments);
+          sendVkHit();
+        };
+
+        window.addEventListener('popstate', function() {
+          sendVkHit();
+        });
+      })();
+    })();
+  </script>
+
+  <noscript>
+    <img src="https://vk.com/rtrg?p=3728550"
+         style="position:fixed; left:-999px;" alt=""/>
+  </noscript>
+
+  <!-- Top.Mail.Ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "3728550", type: "pageView", start: (new Date()).getTime()});
+    (function(d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src = "https://top-fwz1.mail.ru/js/code.js";
+      var f = function() { var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s); };
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "tmr-code");
+  </script>
+  <noscript>
+    <div>
+      <img src="https://top-fwz1.mail.ru/counter?id=3728550;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+    </div>
+  </noscript>
+  <!-- /Top.Mail.Ru counter -->
+
+  <title>Введение в ортопедию</title>
+</head>
+
+<body>
+  <noscript>Для работы приложения необходимо включить JavaScript.</noscript>
+  <div id="root"></div>
+  
+  <!-- Для React SPA - дополнительный скрипт для отслеживания переходов -->
+  <script type="text/javascript">
+    // Функция для отправки хита при изменении маршрута в React SPA
+    function sendYandexHit(url) {
+      if (window.ym && typeof window.ym === 'function') {
+        ym(105921891, 'hit', url);
+      }
+    }
+    
+    // Мониторинг изменения URL для SPA
+    (function() {
+      var pushState = history.pushState;
+      history.pushState = function() {
+        pushState.apply(history, arguments);
+        sendYandexHit(window.location.pathname);
+      };
+      
+      window.addEventListener('popstate', function() {
+        sendYandexHit(window.location.pathname);
+      });
+    })();
+  </script>
+</body>
+
+</html>
