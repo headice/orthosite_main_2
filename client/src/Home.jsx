@@ -8,7 +8,7 @@ import Programma from "./components/Programma";
 import { Tarif } from "./components/Tarif";
 import { Organizatori } from "./components/Organizatori";
 import { Contacts } from "./components/Contacts";
-import Footer from "./components/Footer.jsx";
+
 
 // фон после hero
 import bgImage from "./components/img/after_hero_back.png";
