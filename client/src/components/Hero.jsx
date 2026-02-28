@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import orthos from "./img/ortho_hero.png";
 import heroBack from "./img/hero_back.jpg";
-import Tg from "./img/tetega.png";
+
 
 
 export const Hero = ({ onBuyTicket }) => {
